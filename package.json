@@ -1,6 +1,6 @@
 {
-  "name": "whiteboard-extension",
-  "displayName": "Whiteboard",
+  "name": "whiteboard-for-code",
+  "displayName": "Whiteboard for Code",
   "description": "A simple whiteboard for VS Code",
   "version": "0.0.1",
   "engines": {
