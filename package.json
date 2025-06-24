@@ -1,0 +1,53 @@
+{
+  "name": "whiteboard-extension",
+  "displayName": "Whiteboard",
+  "description": "A simple whiteboard for VS Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "publisher": "Rohan Shah",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourname/whiteboard-extension.git"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "whiteboard.open",
+        "title": "Open Whiteboard",
+        "icon": "$(edit)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "whiteboard.open",
+          "when": "true",
+          "group": "navigation"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "whiteboard.open",
+          "title": "Whiteboard: Open"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "@types/node": "16.x",
+    "typescript": "^4.9.4"
+  }
+}
