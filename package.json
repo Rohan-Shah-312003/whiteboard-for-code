@@ -2,9 +2,9 @@
   "name": "whiteboard-for-code",
   "displayName": "Whiteboard for Code",
   "description": "A simple whiteboard for VS Code",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
-    "vscode": "^1.80.0"
+    "vscode": "^1.60.0"
   },
   "publisher": "Rohan-Shah-312003",
   "icon": "icon.png",
@@ -50,7 +50,7 @@
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.80.0",
+    "@types/vscode": "^1.60.0",
     "@types/node": "18.x",
     "@typescript-eslint/eslint-plugin": "^6.13.0",
     "@typescript-eslint/parser": "^6.13.0",

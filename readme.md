@@ -4,12 +4,17 @@ A simple whiteboard extension for VS Code that allows you to draw, sketch, and b
 
 ## Features
 
-- 🎨 Multiple drawing tools (pen, eraser, line, rectangle, circle)
-- 🎨 Color picker and adjustable brush size
-- 🌙 Automatic theme adaptation (light/dark mode)
-- 💾 Save drawings as PNG files
-- 🖱️ Touch support for tablets
-- 🧹 Clear canvas functionality
+-   🎨 Multiple drawing tools (pen, eraser, line, arrow, rectangle, circle, text)
+-   ✋ Hand/Pan tool for navigating the canvas
+-   🎨 Color picker and adjustable brush size
+-   🔍 Zoom controls (zoom in, zoom out, reset)
+-   📏 Grid overlay for reference
+-   ↶ Undo/Redo functionality
+-   🌙 Automatic theme adaptation (light/dark mode)
+-   💾 Save drawings as PNG files
+-   💿 Auto-save state locally
+-   🖱️ Touch support for tablets
+-   ⌨️ Keyboard shortcuts for quick tool access
 
 ## Usage
 
@@ -20,11 +25,11 @@ A simple whiteboard extension for VS Code that allows you to draw, sketch, and b
 
 ## Commands
 
-- `Whiteboard: Open` - Opens a new whiteboard panel
+-   `Whiteboard: Open` - Opens a new whiteboard panel
 
 ## Requirements
 
-- VS Code 1.60.0 or higher
+-   VS Code 1.80.0 or higher
 
 ## Installation
 
@@ -33,6 +38,13 @@ Install from the VS Code Marketplace or install the `.vsix` file directly.
 ## Release Notes
 
 ### 0.0.1
-- Initial release
-- Basic drawing functionality
-- Theme support
+
+-   Initial release
+-   Basic drawing functionality
+-   Theme support
+
+
+### 1.0.0
+-   UI/UX Revamped and made more smooth
+-   Much better and robust state management
+-   
