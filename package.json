@@ -2,12 +2,12 @@
   "name": "whiteboard-for-code",
   "displayName": "Whiteboard for Code",
   "description": "A simple whiteboard for VS Code",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
-    "vscode": "^1.60.0"
+    "vscode": "^1.80.0"
   },
   "publisher": "Rohan-Shah-312003",
-  "icon":
+  "icon":"icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/Rohan-Shah-312003/whiteboard-for-code.git"
