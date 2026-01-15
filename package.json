@@ -2,7 +2,7 @@
   "name": "whiteboard-for-code",
   "displayName": "Whiteboard for Code",
   "description": "A simple whiteboard for VS Code",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.80.0"
   },
