@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Whiteboard</title>
+		<link rel="stylesheet" type="text/css" href="{{styleUri}}" />
+	</head>
+	<body>
+		<canvas id="canvas"></canvas>
+		<canvas id="gridCanvas" class="grid-overlay"></canvas>
+
+		<div class="toolbar">
+			<div class="tool-group">
+				<button class="tool-btn" data-tool="hand" title="Hand (H)">
+					✋
+				</button>
+				<button class="tool-btn active" data-tool="pen" title="Pen (P)">
+					✏️
+				</button>
+				<button class="tool-btn" data-tool="eraser" title="Eraser (E)">
+					🧽
+				</button>
+			</div>
+
+			<div class="tool-group">
+				<button class="tool-btn" data-tool="line" title="Line (L)">
+					📏
+				</button>
+				<button class="tool-btn" data-tool="arrow" title="Arrow (A)">
+					➡️
+				</button>
+				<button
+					class="tool-btn"
+					data-tool="rectangle"
+					title="Rectangle (R)"
+				>
+					⬜
+				</button>
+				<button class="tool-btn" data-tool="circle" title="Circle (C)">
+					⭕
+				</button>
+			</div>
+
+			<div class="tool-group">
+				<div class="color-picker-wrapper">
+					<div class="color-palette" id="colorPalette"></div>
+					<div class="color-display" id="colorDisplay"></div>
+				</div>
+			</div>
+
+			<div class="tool-group">
+				<input
+					type="range"
+					class="stroke-width-slider"
+					id="strokeWidth"
+					min="1"
+					max="24"
+					value="2"
+				/>
+				<span class="size-display" id="sizeDisplay">6</span>
+			</div>
+
+			<div class="tool-group">
+				<button class="tool-btn" onclick="undo()" title="Undo (Ctrl+Z)">
+					↶
+				</button>
+				<button class="tool-btn" onclick="redo()" title="Redo (Ctrl+Y)">
+					↷
+				</button>
+			</div>
+
+			<div class="tool-group">
+				<!-- <button class="tool-btn" onclick="clearAll()" title="Clear All">
+					🗑️
+				</button> -->
+				<button class="tool-btn" onclick="exportImage()" title="Export">
+					💾
+				</button>
+			</div>
+		</div>
+
+		<div class="zoom-controls">
+			<button class="zoom-btn" onclick="zoomIn()">+</button>
+			<div class="zoom-display" id="zoomDisplay">100%</div>
+			<button class="zoom-btn" onclick="zoomOut()">−</button>
+			<button class="zoom-btn" onclick="resetZoom()" title="Reset">
+				⊙
+			</button>
+		</div>
+
+		<!-- <div class="element-counter" id="elementCounter">0 elements</div> -->
+		<script src="{{scriptUri}}"></script>
+	</body>
+</html>
